@@ -54,14 +54,18 @@
   <body>
     <main role="main">
       <article id="webslides">
+        <!-- ↑↑ End boilerplate ↑↑ -->
+
 
         <section class="bg-black-blue aligncenter">
           <span class="background dark" style="background-image:url('https://source.unsplash.com/6njoEbtarec/')"></span>
           <!--.wrap = container (width: 90%) with fadein animation -->
           <div class="wrap">
-            <p class="text-subtitle">Helior's Example Slides</p>
-            <h1 class="text-landing">(change this)</h1>
+            <p class="text-subtitle">What's good, Fam? You know what it is...</p>
+            <h1 class="text-landing">((( Example Slides )))</h1>
+            <p class="text-subtitle">(tell your Mom I said hi 👋 )</p>
             <p class="text-symbols">* * * </p>
+
             <p>
               <a class="button ghost" href="https://github.com/helior/slides" title="Helior's slides Git repository">
                   <svg class="fa-github">
@@ -70,11 +74,62 @@
                   View The Source
                 </a>
             </p>
+
+            <h4>More examples from the dude himself:</h4>
+            <ul class="flexblock">
+              <li><a href="https://webslides.tv/demos/media">https://webslides.tv/demos/media</a></li>
+              <li><a href="https://webslides.tv/demos/components">https://webslides.tv/demos/components</a></li>
+              <li><a href="https://webslides.tv/demos/classes">https://webslides.tv/demos/classes</a></li>
+            </ul>
           </div>
-          <!-- .end .wrap -->
         </section>
 
+        <section class="bg-black">
+          <span class="background dark" style="background-image:url('../common/images/duck-boy.gif')"></span>
+          <div class="wrap"><h1>Fullscreen gif w/ overlay</h1></div>
+        </section>
 
+        <section class="fullscreen">
+          <div class="wrap"><h1>Fullscreen video</h1></div>
+          <div class="embed">
+            <video autoplay loop poster="../common/images/no-vacancy.jpg">
+              <source src="../common/videos/peggy.mp4" type="video/mp4">
+            </video>
+          </div>
+        </section>
+
+        <section class="fullscreen bg-blue">
+          <div class="wrap"><h1>Fullscreen background video w/ overlay</h1></div>
+          <div class="embed dark">
+            <video autoplay muted loop poster="../common/images/no-vacancy.jpg">
+              <source src="../common/videos/peggy.mp4" type="video/mp4">
+            </video>
+          </div>
+        </section>
+
+        <section class="fullscreen">
+          <div class="wrap"><h1>Fullscreen YouTube video</h1></div>
+          <div class="embed">
+            <iframe src="https://www.youtube.com/embed/i__73ljDyC8">
+            </iframe>
+          </div>
+        </section>
+
+        <section class="fullscreen">
+          <div class="wrap"><h1>Sugar YouTube API</h1><p>autoplay works on webserver (not file://)</p></div>
+          <div class="embed">
+            <div data-youtube data-youtube-id="iLjTfebLOd4" data-autoplay data-loop data-no-controls></div>
+          </div>
+        </section>
+
+        <section class="fullscreen bg-black">
+          <div class="wrap"><h1>Sugar YouTube w/ overlay/mute</h1><p>autoplay works on webserver (not file://)</p></div>
+          <div class="embed dark">
+            <div data-youtube data-youtube-id="iLjTfebLOd4" data-autoplay data-loop data-mute data-no-controls></div>
+          </div>
+        </section>
+
+        <!-- Begin boilerplate ↓↓  -->
       </article>
     </main>
     <script src="../common/js/webslides.js"></script>
